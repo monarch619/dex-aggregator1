@@ -100,7 +100,7 @@ const Navigation = () => {
             {account.slice(0, 6) + "..." + account.slice(38, 42)}
           </Navbar.Text>
         ) : (
-          <Button className={styles.connectBtn} onClick={connectHandler}>
+          <Button className={styles.connectBtn} disabled={true} onClick={connectHandler}>
             Connect
           </Button>
         )}
